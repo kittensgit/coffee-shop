@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #1c1814;
+}
+.header__wrapper {
+    margin: 0 auto;
+    width: 1420px;
+    padding-top: 33px;
+    padding-bottom: 32px;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+}
+.header__list-item {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin-right: 48px;
+}
+
+.header__item-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__logo {
+}
