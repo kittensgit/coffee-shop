@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --accent: #c99e71;
+    --dark: #1c1814;
+    --bg: #14110e;
+}
+
 .bg {
     background-image: url(./images/bg.jpg);
     background-repeat: no-repeat;
@@ -18,7 +25,7 @@
 /* Header */
 
 .header {
-    background-color: #1c1814;
+    background-color: var(--dark);
 }
 .header__wrapper {
     margin: 0 auto;
@@ -54,10 +61,7 @@
 }
 
 .header__item-link:hover {
-    color: #c99e71;
-}
-
-.header__logo {
+    color: var(--accent);
 }
 
 /* Home */
@@ -70,8 +74,6 @@
     position: relative;
 }
 
-.home__info {
-}
 .home__title {
     color: #fff;
     font-family: Righteous;
@@ -87,19 +89,64 @@
     margin-top: 32px;
     margin-bottom: 64px;
 }
-.home__link {
-}
 .home__button {
     color: white;
-    background-color: #c99e71;
+    background-color: var(--accent);
     padding: 24px 40px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: none;
 }
+
+.home__button:hover {
+    background-color: #ab8358;
+}
+
 .home__play {
     position: absolute;
     bottom: -17px;
     right: 0;
+}
+
+/* Process */
+
+.process {
+    background-color: var(--bg);
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.process__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process__card {
+    margin-right: 36px;
+}
+
+.process__card:last-child {
+    margin-right: 0;
+}
+
+.process__title {
+    color: #fff;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.process__title-num {
+    color: var(--accent);
+}
+
+.process__img {
+    width: 366px;
+    height: 420px;
 }
