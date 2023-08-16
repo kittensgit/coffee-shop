@@ -38,6 +38,15 @@
     background-color: #ab8358;
 }
 
+.title {
+    color: #fff;
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    margin-bottom: 36px;
+}
+
 .subtitle {
     color: var(--accent);
     font-family: Urbanist;
@@ -192,21 +201,13 @@
     padding: 120px 56px 147px 56px;
 }
 
-.history__title {
-    color: #fff;
-    font-family: Righteous;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 62.4px;
-    margin-bottom: 36px;
-}
-
 .history__text {
     color: #fff;
     font-family: Urbanist;
     font-size: 16px;
     font-weight: 500;
     line-height: 28.8px;
+    text-transform: capitalize;
 }
 
 /* Product */
@@ -354,4 +355,27 @@
 
 .product__card-price-ac {
     color: var(--accent);
+}
+
+/* CTA */
+
+.cta {
+    background-color: var(--bg);
+}
+.cta__wrapper {
+    background-color: var(--dark);
+    display: flex;
+    padding: 85px 80px 86px 169px;
+}
+.cta__image {
+    padding-right: 160px;
+}
+.cta__text {
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-transform: capitalize;
+    margin-bottom: 36px;
 }
