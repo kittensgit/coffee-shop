@@ -55,6 +55,15 @@
     margin-bottom: 12px;
 }
 
+.text {
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-transform: capitalize;
+}
+
 /* Header */
 
 .header {
@@ -123,6 +132,7 @@
     line-height: 36px;
     margin-top: 32px;
     margin-bottom: 64px;
+    text-transform: capitalize;
 }
 
 .home__play {
@@ -199,15 +209,6 @@
 .history__info {
     background-color: var(--dark);
     padding: 120px 56px 147px 56px;
-}
-
-.history__text {
-    color: #fff;
-    font-family: Urbanist;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28.8px;
-    text-transform: capitalize;
 }
 
 /* Product */
@@ -368,12 +369,6 @@
     padding-right: 160px;
 }
 .cta__text {
-    color: #fff;
-    font-family: Urbanist;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28.8px;
-    text-transform: capitalize;
     margin-bottom: 36px;
 }
 
@@ -417,4 +412,106 @@
     font-weight: 600;
     align-self: center;
     margin-left: 117px;
+}
+
+/* feedback */
+
+.feedback {
+    background-color: var(--bg);
+    padding-bottom: 140px;
+}
+.feedback__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback__cards {
+    display: flex;
+    margin-bottom: 36px;
+}
+.feedback__card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--dark);
+    padding: 40px;
+    margin-right: 40px;
+}
+.feedback__card:last-child {
+    margin-right: 0;
+}
+.feedback__card-bio {
+    display: flex;
+    margin-bottom: 28px;
+}
+.feedback__card-img {
+    margin-right: 24px;
+}
+.feedback__card-text {
+    width: 332px;
+    height: 145px;
+}
+.feedback__card-info {
+    display: flex;
+    flex-direction: column;
+}
+.feedback__card-name {
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+.feedback__card-work {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.feedback__card-rate {
+    position: absolute;
+    bottom: 42px;
+    right: 39px;
+}
+
+.feedback__pagination {
+    display: flex;
+    justify-content: space-between;
+}
+.pagination__slider {
+    display: flex;
+    flex-direction: column;
+}
+.pagination__slider-title {
+    color: #c99e71;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+.pagination__slider-bar {
+    width: 120px;
+    height: 4px;
+    background: var(--dark);
+    border-radius: 3px;
+}
+.pagination__slider-line {
+    width: 50px;
+    height: 100%;
+    background-color: var(--accent);
+    border-radius: 3px;
+}
+.pagination__arrows {
+    display: flex;
+}
+.pagination__arrow-left {
+    margin-right: 16px;
+    cursor: pointer;
+}
+.pagination__arrow-right {
+    cursor: pointer;
 }
