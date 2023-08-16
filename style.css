@@ -10,6 +10,10 @@
     --bg: #14110e;
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
 .bg {
     background-image: url(./images/bg.jpg);
     background-repeat: no-repeat;
@@ -17,9 +21,29 @@
     background-position: center center;
 }
 
-.container {
-    width: 1170px;
-    margin: 0 auto;
+.button {
+    color: white;
+    background-color: var(--accent);
+    padding: 24px 40px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: none;
+}
+
+.button:hover {
+    background-color: #ab8358;
+}
+
+.subtitle {
+    color: var(--accent);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 /* Header */
@@ -38,10 +62,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .header__list {
     display: flex;
     align-items: center;
 }
+
 .header__list-item {
     list-style-type: none;
     font-family: 'Inter', sans-serif;
@@ -88,22 +114,6 @@
     line-height: 36px;
     margin-top: 32px;
     margin-bottom: 64px;
-}
-.home__button {
-    color: white;
-    background-color: var(--accent);
-    padding: 24px 40px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-    border: none;
-}
-
-.home__button:hover {
-    background-color: #ab8358;
 }
 
 .home__play {
@@ -182,14 +192,6 @@
     padding: 120px 56px 147px 56px;
 }
 
-.history__subtitle {
-    color: var(--accent);
-    font-family: Urbanist;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
 .history__title {
     color: #fff;
     font-family: Righteous;
@@ -205,4 +207,151 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 28.8px;
+}
+
+/* Product */
+
+.product {
+    background-color: var(--bg);
+    padding-bottom: 140px;
+}
+
+.product__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__cards {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.product__title {
+    font-weight: 400;
+    color: #fff;
+    font-family: Righteous;
+    font-size: 48px;
+    margin-bottom: 56px;
+}
+
+.product__card {
+    background-color: #121315;
+    margin-right: 36px;
+    padding: 48px 48px 36px 48px;
+}
+
+.product__card:last-child {
+    margin-right: 0;
+}
+
+.product__card-title-cart {
+    color: #fff;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 38px;
+}
+
+.product__card-btn {
+    color: white;
+    background-color: var(--accent);
+    padding: 13px 20px 13px 56px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: none;
+    position: relative;
+}
+
+.product__card-btn:hover {
+    background-color: #ab8358;
+}
+
+.product__card-btn:before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/bag.svg');
+    background-size: cover;
+}
+
+.product__card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__card-rate {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.product__card-subtitle {
+    color: var(--accent);
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 129px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-size: cover; /* Размеры картинок */
+    position: absolute;
+    bottom: 0; /* Положение по вертикали */
+}
+
+.rate-star1 {
+    background-image: url('images/star2.png');
+
+    left: 65px;
+}
+.rate-star2 {
+    background-image: url('images/star2.png');
+    left: 85px;
+}
+.rate-star3 {
+    background-image: url('images/star2.png');
+    left: 105px;
+}
+.rate-star4 {
+    background-image: url('images/star2.png');
+    left: 125px;
+}
+.rate-star5 {
+    background-image: url('images/star1.png');
+    left: 145px;
+}
+
+.product__card-title {
+    color: #fff;
+    font-family: Righteous;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product__card-price {
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product__card-price-ac {
+    color: var(--accent);
 }
