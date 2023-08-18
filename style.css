@@ -64,6 +64,10 @@
     text-transform: capitalize;
 }
 
+.span {
+    color: var(--accent);
+}
+
 /* Header */
 
 .header {
@@ -169,10 +173,6 @@
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 24px;
-}
-
-.process__title-num {
-    color: var(--accent);
 }
 
 .process__img {
@@ -348,10 +348,6 @@
     font-family: Urbanist;
     font-size: 18px;
     font-weight: 600;
-}
-
-.product__card-price-ac {
-    color: var(--accent);
 }
 
 /* CTA */
@@ -549,8 +545,94 @@
     border: none;
     color: white;
     margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32.4px;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in;
+}
+.booking__field:focus {
+    outline: none;
+    transform: scale(1.1);
 }
 
 .booking__btn {
     margin-top: 32px;
+}
+
+/* News */
+
+.news {
+    background-color: var(--bg);
+    padding-bottom: 140px;
+}
+.news__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news__title {
+    margin-bottom: 56px;
+}
+.news__cards {
+    display: flex;
+}
+.news__card {
+    margin-right: 36px;
+    background-color: var(--dark);
+}
+.news__card:last-child {
+    margin-right: 0;
+}
+.news__card-img {
+    max-width: 366px;
+}
+.news__card-wrapper {
+    padding: 20px 24px 24px 24px;
+}
+.news__card-info {
+    display: flex;
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.news__caption {
+    color: #fff;
+    font-family: Righteous;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.news__link {
+    color: var(--accent);
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 32px;
+    position: relative;
+}
+
+.news__link::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/arrow.png');
+    background-size: cover;
+    transition: left 0.3s ease; /* Плавное изменение положения */
+}
+
+.news__link:hover::after {
+    left: 88px; /* Новое расположение при наведении */
 }
