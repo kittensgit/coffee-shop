@@ -515,3 +515,42 @@
 .pagination__arrow-right {
     cursor: pointer;
 }
+
+/* Booking */
+
+.booking {
+    background-color: var(--bg);
+    padding-bottom: 140px;
+}
+
+.booking__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки с равной шириной */
+    width: 100%;
+}
+
+.booking__map {
+    max-width: 585px;
+}
+.booking__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 48px;
+    background-color: var(--dark);
+}
+.booking__title {
+    margin-bottom: 56px;
+}
+.booking__field {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: var(--bg);
+    border: none;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.booking__btn {
+    margin-top: 32px;
+}
