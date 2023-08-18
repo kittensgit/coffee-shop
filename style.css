@@ -68,6 +68,32 @@
     color: var(--accent);
 }
 
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin-right: 48px;
+    font-weight: 400;
+}
+
+.list-item:last-child {
+    margin-right: 0;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.item-link:hover {
+    color: var(--accent);
+}
 /* Header */
 
 .header {
@@ -83,33 +109,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header__list {
-    display: flex;
-    align-items: center;
-}
-
-.header__list-item {
-    list-style-type: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    margin-right: 48px;
-    font-weight: 400;
-}
-
-.header__list-item:last-child {
-    margin-right: 0;
-}
-
-.header__item-link {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.2s ease-in;
-}
-
-.header__item-link:hover {
-    color: var(--accent);
 }
 
 /* Home */
@@ -635,4 +634,48 @@
 
 .news__link:hover::after {
     left: 88px; /* Новое расположение при наведении */
+}
+
+/* Bottom navigation */
+
+.bottom-nav {
+    background-color: var(--bg);
+    padding-bottom: 72px;
+}
+.bottom-nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-nav__logo {
+    max-width: 72px;
+    margin-right: 36px;
+}
+.bottom-nav__list-item {
+    margin-right: 40px;
+}
+.bottom-nav__email {
+    position: relative;
+}
+
+.bottom-nav__field {
+    border-radius: 36px;
+    background-color: var(--dark);
+    padding-right: 122px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    padding-left: 28px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-transform: capitalize;
+    border: none;
+    margin-left: 82px;
+
+    background-image: url('/images/arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center; /* Позиционирование с учетом отступа */
+    background-size: 48px auto; /* Размеры изображения */
 }
