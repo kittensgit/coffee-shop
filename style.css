@@ -679,3 +679,19 @@
     background-position: calc(100% - 12px) center; /* Позиционирование с учетом отступа */
     background-size: 48px auto; /* Размеры изображения */
 }
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer__caption {
+    text-align: center;
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+    padding: 33px;
+}
